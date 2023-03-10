@@ -17,5 +17,34 @@ This project provides Platform.io code for building an STM32F103C8T6 "blue pill"
 ![BT and STM32 TFT](https://raw.githubusercontent.com/octal-ip/STM32_JBD_BMS_Monitor/main/pics/STM32_JBD.jpg "BT and STM32 TFT")
 
 
+### Wiring
+| STM32 Pin  | ILI9341 TFT Pin  |
+| :------------ | :------------ |
+| PB13  | CS  |
+| PB14  | DC  |
+| PB15  | RST  |
+| PA7  | MOSI  |
+| PA6  | MISO  |
+| PA5  | SCK  |
+| +3.3v  | LED  |
+
+| ADUM1201 Pin  | STM32 Pin  | BMS Pin |
+| :------------ | :------------ | :------------ |
+| VIA  | X | JBD BMS TX (next to positive) |
+| VIB  | TX3 (PB10) | X |
+| VOA  | X | JBD BMS RX (next to negative) |
+| VOB  | RX3 (PB11) | X |
+| VDD1  | 3.3v | X |
+| GND1  | GND | X |
+| VDD2  | X | Positive (red) |
+| GND2  | X | Negative (black) |
+
+|  Bluetooth Pin  | STM32 Pin  |
+| :------------ | :------------ | 
+| TXD | TX2 (PA2) | 
+| RXD  | RX2 (PA3) | 
+| GND  | GND |
+| VCC | Battery cell 3 +ve (~10v) |
+
 ### Credits:
 [Bodmer for TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
