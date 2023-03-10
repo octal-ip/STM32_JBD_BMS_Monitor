@@ -18,6 +18,7 @@ This project provides Platform.io code for building an STM32F103C8T6 "blue pill"
 
 
 ### Wiring
+#### TFT Display Connections
 | STM32 Pin  | ILI9341 TFT Pin  |
 | :------------ | :------------ |
 | PB13  | CS  |
@@ -28,17 +29,19 @@ This project provides Platform.io code for building an STM32F103C8T6 "blue pill"
 | PA5  | SCK  |
 | +3.3v  | LED  |
 
-| ADUM1201 Pin  | STM32 Pin  | BMS Pin |
+#### UART Connections
+| ADUM1201 Pin  | STM32 Pin  | JBD BMS Pin |
 | :------------ | :------------ | :------------ |
-| VIA  | X | JBD BMS TX (next to positive) |
+| VIA  | X | TX (next to positive) |
 | VIB  | TX3 (PB10) | X |
-| VOA  | X | JBD BMS RX (next to negative) |
+| VOA  | X | RX (next to negative) |
 | VOB  | RX3 (PB11) | X |
 | VDD1  | 3.3v | X |
 | GND1  | GND | X |
 | VDD2  | X | Positive (red) |
 | GND2  | X | Negative (black) |
 
+#### Bluetooth Connections
 |  Bluetooth Pin  | STM32 Pin  |
 | :------------ | :------------ | 
 | TXD | TX2 (PA2) | 
