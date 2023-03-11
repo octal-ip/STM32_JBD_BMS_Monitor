@@ -37,8 +37,8 @@ This project provides Platform.io code for building an STM32F103C8T6 "blue pill"
 | :------------ | :------------ | :------------ |
 | VIA  | X | TX (next to positive) |
 | VIB  | TX3 (PB10) | X |
-| VOA  | X | RX (next to negative) |
-| VOB  | RX3 (PB11) | X |
+| VOA  | RX3 (PB11) | X |
+| VOB  | X | RX (next to negative) |
 | VDD1  | 3.3v | X |
 | GND1  | GND | X |
 | VDD2  | X | Positive (red) |
