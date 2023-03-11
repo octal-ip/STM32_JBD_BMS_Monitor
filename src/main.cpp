@@ -49,10 +49,9 @@
 // The pin labeled TX on the bluetooth adaptor connects to PA2
 // The data pin next to the positive wire on the BMS connects to input A of the ADUM1201.
 // The data pin next to the negative wire on the BMS connects to output A of the ADUM1201
-// Output B of the ADUM connects to PB11 (Serial3)
-// Input B of the ADUM connects PB10
+// Output B of the ADUM1201 connects to PB11 (Serial3)
+// Input B of the ADUM1201 connects PB10
 
-byte bmsData = 0x0;
 byte packetStatus = 0;
 byte packetCount = 0;
 byte incomingByte = 0;
