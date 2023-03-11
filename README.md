@@ -41,7 +41,7 @@ This project provides Platform.io code for building an STM32F103C8T6 "blue pill"
 | VOB  | X | RX (next to negative) |
 | VDD1  | 3.3v | X |
 | GND1  | GND | X |
-| VDD2  | X | Positive (red) |
+| VDD2  | X | Positive via 3.3v regulator (red) |
 | GND2  | X | Negative (black) |
 
 #### Bluetooth Connections
