@@ -11,6 +11,9 @@ This project provides Platform.io code for building an STM32F103C8T6 "blue pill"
 - A generic 3.3v 320x240 ILI9341 TFT screen can be connected through the STM32's SPI interface to display realtime statistics.
 - To avoid ground loops, it is essential to use an ADUM1201 serial isolator between the BMS UART interface and the STM32.
 - The active-high input for a relay connected across the balancer's "run" pads should be connected to PB1.
+- The variables maxCurrent, minVoltage and maxVoltage should be adjusted in the code to suit your battery to ensure the ring meters render showing a useful scale.
+- The STM32 can operate without the TFT display attached. Remove the TFT_ENABLE define to disable all TFT functions.
+- The TFT_eSPI library must be configured to suit your display. Instructions for the generic SPI ILI9341 are included inline with the code.
 
 
 ### The Bluetooth module, Xiaoxiang app and STM32 TFT operating simultaneously.
