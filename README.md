@@ -16,6 +16,15 @@ This project provides Platform.io code for building an STM32F103C8T6 "blue pill"
 - The TFT_eSPI library must be configured to suit your display. Instructions for the generic SPI ILI9341 are included inline with the code.
 
 
+### Bill of materials
+- STM32F103 "blue pill" board (or clone)
+- ST-Link v2 programmer (only if you don't have one already)
+- ADUM1201 dual channel digital isolator
+- 2 x linear voltage regulator modules, 1 x 3.3v, 1 x 5v.
+- 5v relay module
+- ILI9341 SPI TFT screen (optional, but very useful - must be the 3.3v version)
+
+
 ### The Bluetooth module, Xiaoxiang app and STM32 TFT operating simultaneously.
 ![BT and STM32 TFT](https://raw.githubusercontent.com/octal-ip/STM32_JBD_BMS_Monitor/main/pics/STM32_JBD.jpg "BT and STM32 TFT")
 
