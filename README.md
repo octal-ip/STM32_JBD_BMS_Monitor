@@ -52,5 +52,7 @@ This project provides Platform.io code for building an STM32F103C8T6 "blue pill"
 | GND  | GND |
 | VCC | Battery cell 3 +ve (~10v) |
 
+![Wiring layout](https://raw.githubusercontent.com/octal-ip/STM32_JBD_BMS_Monitor/main/pics/STM32_JBD_Diagram.png "Wiring layout")
+
 ### Credits:
 [Bodmer for TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
