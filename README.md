@@ -13,7 +13,13 @@ This project provides Platform.io code for building an STM32F103C8T6 "blue pill"
 - The active-high input for a relay connected across the balancer's "run" pads should be connected to PB1.
 - The variables maxCurrent, minVoltage and maxVoltage should be adjusted in the code to suit your battery to ensure the ring meters render with a useful scale.
 - The STM32 can operate without the TFT display attached. Remove the TFT_ENABLE define to disable all TFT functions.
-- The TFT_eSPI library must be configured to suit your display. Instructions for the generic SPI ILI9341 are included inline with the code.
+- The TFT_eSPI library must be configured to suit your display. For the generic SPI ILI9341:
+  - Edit *.pio\libdeps\bluepill_f103c8\TFT_eSPI\User_Setups\Setup32_ILI9341_STM32F103.h* lines 24, 25 and 26 as below:
+    - *#define TFT_CS PB13 // Chip select control pin to TFT CS*
+    - *#define TFT_DC PB14 // Data Command control pin to TFT DC (may be labelled RS = Register Select)*
+    - *#define TFT_RST PB15 // Reset pin to TFT RST (or RESET)*
+  - Remove the two slashes at the start of line 70 in *.pio\libdeps\bluepill_f103c8\TFT_eSPI\User_Setup_Select.h* as below:
+    - #include <User_Setups/Setup32_ILI9341_STM32F103.h> // Setup for "Blue/Black Pill"
 - If you need more advanced functinality including the ability to send statistics to InfluxDB over WiFi, have a look at the sister project for the ESP8266 here: https://github.com/octal-ip/ESP8266_JBD_BMS_Monitor
 
 
